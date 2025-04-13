@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Prabhudayal Vaishnav</title>
+    <meta name="description" content="Get in touch with Prabhudayal Vaishnav - Research Intern at ESIEA, PARIS">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../" class="logo">PRABHUDAYAL VAISHNAV</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../">WORK</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="year">2025</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Let's Connect</h1>
+                <div class="contact-subtitle">
+                    <p>Feel free to reach out for collaborations, questions, or just to say hello!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-container">
+                        <div class="contact-method">
+                            <h3>Email</h3>
+                            <p><a href="mailto:p09m21@gmail.com">p09m21@gmail.com</a></p>
+                        </div>
+                        <div class="contact-method">
+                            <h3>Connect on</h3>
+                            <ul class="contact-social">
+                                <li><a href="https://github.com/xprabhudayal" target="_blank">GitHub</a></li>
+                                <li><a href="https://www.linkedin.com/in/xprabhudayal" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://twitter.com/globalxprada" target="_blank">Twitter</a></li>
+                                <li><a href="https://leetcode.com/u/global-prada/" target="_blank">LeetCode</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-method">
+                            <h3>Location</h3>
+                            <p>Currently based in Paris, France for my research internship at ESIEA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability">
+            <div class="container">
+                <h2>Availability</h2>
+                <div class="availability-content">
+                    <p>I'm currently focusing on my research internship at ESIEA, but I'm open to discussing:</p>
+                    <ul class="availability-list">
+                        <li>Collaborative research projects</li>
+                        <li>Remote freelance opportunities</li>
+                        <li>Open source contributions</li>
+                        <li>Technical talks or workshops</li>
+                    </ul>
+                    <p>Feel free to reach out to discuss any potential collaborations or opportunities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="social-links">
+                    <a href="https://github.com/xprabhudayal" target="_blank">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/xprabhudayal" target="_blank">LINKEDIN</a>
+                    <a href="https://twitter.com/globalxprada" target="_blank">TWITTER</a>
+                </div>
+                <div class="contact-info">
+                    <p>New York, NY 10003<br>United States</p>
+                </div>
+                <div class="cta-text">
+                    <p>Do you like<br>What you see?</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 PRABHUDAYAL VAISHNAV</p>
+                <a href="mailto:p09m21@gmail.com" class="btn btn-outline-light">Let's connect</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple form handling - in a real site you'd use a backend service
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Simulate form submission
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+
+            // Simulate server response after 2 seconds
+            setTimeout(function() {
+                const form = document.getElementById('contact-form');
+                form.innerHTML = '<div class="success-message"><p>Thanks for your message! I\'ll get back to you soon.</p></div>';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

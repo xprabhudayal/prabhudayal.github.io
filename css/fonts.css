@@ -1,0 +1,65 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* importing switzer font via cdn */
+@import url('https://fonts.cdnfonts.com/css/switzer');
+
+/* font-family: 'Switzer', sans-serif; */
+                                                
+/* Font variables */
+:root {
+    --font-primary: 'Switzer', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+/* Typography resets */
+body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Additional typography classes */
+.text-light {
+    font-weight: var(--font-weight-light);
+}
+
+.text-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.text-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.text-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.text-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.letter-spacing-sm {
+    letter-spacing: 0.5px;
+}
+
+.letter-spacing-md {
+    letter-spacing: 1px;
+}
+
+.letter-spacing-lg {
+    letter-spacing: 2px;
+}
